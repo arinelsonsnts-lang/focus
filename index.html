@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construa Sua Nova Identidade</title>
+    <!-- Carrega o TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega a fonte Inter do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        // Configuração customizada do Tailwind para adicionar a fonte Inter
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Estilo para a barra de rolagem (opcional, mas melhora a estética dark) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827; /* gray-900 */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151; /* gray-700 */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4b5563; /* gray-600 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-gray-800/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-4 py-5">
+            <h1 class="text-2xl md:text-3xl font-bold text-white">
+                <span class="text-brand-400">Construa</span> Sua Nova Identidade
+            </h1>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-6xl mx-auto p-4 md:p-8 space-y-16">
+
+        <!-- Seção 1: A Metáfora do Celular -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-4">Você é como um Celular? 📱</h2>
+            <p class="text-lg text-gray-400 mb-8">Essa é uma metáfora simples para entender os pilares da sua mudança. Vamos ver como cada parte funciona.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card: Identidade -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-brand-500 transition-all duration-300">
+                    <span class="text-4xl mb-4 block">🎭</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Identidade</h3>
+                    <p class="text-sm font-semibold text-brand-400 mb-2">O Sistema Operacional</p>
+                    <p class="text-gray-300">"Quem você acredita que é." Define seu comportamento automático. Ex: "Sou uma pessoa disciplinada."</p>
+                </div>
+                
+                <!-- Card: Crenças -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-brand-500 transition-all duration-300">
+                    <span class="text-4xl mb-4 block">✅</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Crenças</h3>
+                    <p class="text-sm font-semibold text-brand-400 mb-2">Os Aplicativos Instalados</p>
+                    <p class="text-gray-300">"O que você aceita como verdade." Ex: "Eu consigo aprender qualquer coisa."</p>
+                </div>
+
+                <!-- Card: Desejo -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-brand-500 transition-all duration-300">
+                    <span class="text-4xl mb-4 block">🔥</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Desejo</h3>
+                    <p class="text-sm font-semibold text-brand-400 mb-2">A Bateria que te Move</p>
+                    <p class="text-gray-300">"A energia que faz você tentar mudar." Nasce da dor, da visão de futuro ou da identificação.</p>
+                </div>
+
+                <!-- Card: Hábito -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-brand-500 transition-all duration-300">
+                    <span class="text-4xl mb-4 block">🔄</span>
+                    <h3 class="text-xl font-bold text-white mb-2">Hábito</h3>
+                    <p class="text-sm font-semibold text-brand-400 mb-2">As Ações Automáticas</p>
+                    <p class="text-gray-300">"O que você faz sem pensar." Transforma o princípio em um resultado real. Ex: "Estudar todos os dias."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 3: As 3 Fontes do Desejo (NOVA SEÇÃO) -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">De Onde Nasce o Desejo?</h2>
+            <p class="text-lg text-gray-400 mb-10 text-center max-w-3xl mx-auto">O desejo não surge do nada. Ele nasce da tensão entre a vida que você tem e a vida que você quer. É a energia que te move.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card: A Dor -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-red-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-red-400 mb-3">1. A Dor (O que Empurra)</h3>
+                    <p class="text-gray-300">É a insatisfação com o presente. Quando algo incomoda, frustra ou cansa. É o "chega!" que te força a mudar. Ex: "Não aguento mais viver assim."</p>
+                </div>
+                
+                <!-- Card: A Visão -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-green-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-green-400 mb-3">2. A Visão (O que Puxa)</h3>
+                    <p class="text-gray-300">É a clareza do futuro. Quando você vê uma versão sua muito melhor, um estilo de vida que te inspira. É o ímã que te atrai. Ex: "Quero ser alguém que dá orgulho."</p>
+                </div>
+
+                <!-- Card: A Identificação -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-blue-500/50 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-blue-400 mb-3">3. A Identificação (O que Desperta)</h3>
+                    <p class="text-gray-300">É quando você olha para uma ideia, pessoa ou caminho e pensa: "Isso tem a ver comigo." É o propósito se revelando. Ex: "Eu nasci para fazer isso."</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 4: Guia Prático (Era Seção 3) -->
+        <section>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6">Como Construir Sua Nova Identidade</h2>
+                    <ol class="space-y-6">
+                        <!-- Passo 1 -->
+                        <li class="flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-10 h-10 bg-brand-500 text-gray-900 font-bold text-lg rounded-full flex items-center justify-center">1</span>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Decida quem você quer ser</h4>
+                                <p class="text-gray-400">Escolha uma frase simples: "Sou disciplinado." ou "Sou alguém que termina o que começa."</p>
+                            </div>
+                        </li>
+                        <!-- Passo 2 -->
+                        <li class="flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-10 h-10 bg-brand-500 text-gray-900 font-bold text-lg rounded-full flex items-center justify-center">2</span>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Reescreva as crenças</h4>
+                                <p class="text-gray-400">Troque "eu sempre falho" por "estou aprendendo a acertar mais."</p>
+                            </div>
+                        </li>
+                        <!-- Passo 3 -->
+                        <li class="flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-10 h-10 bg-brand-500 text-gray-900 font-bold text-lg rounded-full flex items-center justify-center">3</span>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Gere desejo (motivação)</h4>
+                                <p class="text-gray-400">Pergunte-se: "Por que eu quero isso?" e "Como minha vida vai ficar se eu mudar?"</a
+                            </div>
+                        </li>
+                        <!-- Passo 4 -->
+                        <li class="flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-10 h-10 bg-brand-500 text-gray-900 font-bold text-lg rounded-full flex items-center justify-center">4</span>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Crie micro-hábitos</h4>
+                                <p class="text-gray-400">Comece pequeno: 5 minutos de estudo, 10 agachamentos, 1 página de livro.</p>
+                            </div>
+                        </li>
+                        <!-- Passo 5 -->
+                        <li class="flex items-start space-x-4">
+                            <span class="flex-shrink-0 w-10 h-10 bg-brand-500 text-gray-900 font-bold text-lg rounded-full flex items-center justify-center">5</span>
+                            <div>
+                                <h4 class="text-xl font-semibold text-white">Reforce sua identidade com provas</h4>
+                                <p class="text-gray-400">Cada hábito completo é um sinal: "É isso. Eu sou essa pessoa."</E></p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                
+                <!-- A Grande Sacada -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-2xl border border-brand-500/50">
+                    <h3 class="text-2xl font-bold text-white mb-4">🔥 A Grande Sacada</h3>
+                    <blockquote class="text-xl md:text-2xl italic text-gray-200 border-l-4 border-brand-400 pl-6">
+                        "Você não muda SE for disciplinado.<br>
+                        Você muda <span class="font-bold text-brand-400 not-italic">QUANDO</span> acredita que é disciplinado."
+                    </blockquote>
+                    <p class="mt-6 text-gray-300">A melhor forma de mudar é agir como a pessoa que você quer ser, <span class="font-semibold text-white">antes mesmo de ser</span>. Finja de verdade até deixar de ser fingimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 5: Reprogramando Crenças (NOVA SEÇÃO) -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Reprogramando Suas Crenças (Antes e Depois)</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <!-- Exemplo 1 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <div class="md:col-span-1 p-4 rounded-lg bg-red-900/50 border border-red-700">
+                        <span class="text-xs text-red-300 font-semibold">ANTES (Limitante)</span>
+                        <p class="text-lg text-red-100">"Eu sempre falho."</p>
+                    </div>
+                    <span class="text-2xl font-bold text-brand-400 text-center transform rotate-90 md:rotate-0">→</span>
+                    <div class="md:col-span-1 p-4 rounded-lg bg-green-900/50 border border-green-700">
+                        <span class="text-xs text-green-300 font-semibold">DEPOIS (Fortalecedora)</span>
+                        <p class="text-lg text-green-100">"Estou aprendendo a acertar mais."</p>
+                    </div>
+                </div>
+                <!-- Exemplo 2 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <div class="md:col-span-1 p-4 rounded-lg bg-red-900/50 border border-red-700">
+                        <span class="text-xs text-red-300 font-semibold">ANTES (Limitante)</span>
+                        <p class="text-lg text-red-100">"Eu não consigo estudar."</p>
+                    </div>
+                    <span class="text-2xl font-bold text-brand-400 text-center transform rotate-90 md:rotate-0">→</span>
+                    <div class="md:col-span-1 p-4 rounded-lg bg-green-900/50 border border-green-700">
+                        <span class="text-xs text-green-300 font-semibold">DEPOIS (Fortalecedora)</span>
+                        <p class="text-lg text-green-100">"Eu posso melhorar 1% por dia."</p>
+                    </div>
+                </div>
+                <!-- Exemplo 3 -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center bg-gray-800 p-6 rounded-xl border border-gray-700">
+                    <div class="md:col-span-1 p-4 rounded-lg bg-red-900/50 border border-red-700">
+                        <span class="text-xs text-red-300 font-semibold">ANTES (Limitante)</span>
+                        <p class="text-lg text-red-100">"Não sou bom com dinheiro."</p>
+                    </div>
+                    <span class="text-2xl font-bold text-brand-400 text-center transform rotate-90 md:rotate-0">→</span>
+                    <div class="md:col-span-1 p-4 rounded-lg bg-green-900/50 border border-green-700">
+                        <span class="text-xs text-green-300 font-semibold">DEPOIS (Fortalecedora)</span>
+                        <p class="text-lg text-green-100">"Estou aprendendo a controlar meu dinheiro."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção 6: Plano de Evolução (Abas) (Era Seção 4) -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Plano de Evolução: 5 Áreas Chave</h2>
+            
+            <!-- Botões das Abas -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8" role="tablist" aria-label="Áreas de Evolução">
+                <button role="tab" aria-selected="false" data-tab="dinheiro" class="tab-button relative px-4 py-2 font-semibold rounded-lg text-sm md:text-base">
+                    💰 Dinheiro
+                    <span class="absolute -top-2 -right-2 px-2 py-0.5 bg-brand-600 text-white text-xs font-bold rounded-full">Foco</span>
+                </button>
+                <button role="tab" aria-selected="false" data-tab="trabalho" class="tab-button px-4 py-2 font-semibold rounded-lg text-sm md:text-base">
+                    📘 Trabalho/Estudo
+                </button>
+                <button role="tab" aria-selected="false" data-tab="mente" class="tab-button px-4 py-2 font-semibold rounded-lg text-sm md:text-base">
+                    🧠 Mente
+                </button>
+                <button role="tab" aria-selected="false" data-tab="corpo" class="tab-button px-4 py-2 font-semibold rounded-lg text-sm md:text-base">
+                    🔥 Corpo
+                </button>
+                <button role="tab" aria-selected="false" data-tab="espiritual" class="tab-button px-4 py-2 font-semibold rounded-lg text-sm md:text-base">
+                    ✨ Espiritual
+                </button>
+            </div>
+
+            <!-- Painéis das Abas -->
+            <div class="bg-gray-800 p-6 md:p-10 rounded-xl shadow-lg border border-gray-700 min-h-[300px]">
+                
+                <!-- Painel: Dinheiro -->
+                <div role="tabpanel" id="dinheiro" class="tab-panel space-y-6">
+                    <h3 class="text-2xl font-bold text-brand-400">💰 Dinheiro (Foco Principal)</h3>
+                    <p class="text-gray-300">Aprender a fazer, manter e multiplicar dinheiro é uma habilidade prática. Veja como as outras áreas se conectam a isso.</p>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">O que fazer na prática:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Criar um controle simples: Quanto entra, quanto sai, para onde vai, o que sobra.</li>
+                            <li>Investir 10% do que sobra (comece com Tesouro Selic, CDBs simples).</li>
+                            <li>Criar uma fonte de renda paralela (veja "Trabalho/Estudo").</li>
+                            <li>Evitar gastos emocionais (veja "Espiritual" e "Mente").</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Como isso aumenta seu dinheiro:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Você cria previsibilidade e para de viver "apagando incêndio".</li>
+                            <li>Você começa a multiplicar seu capital aos poucos (juros compostos).</li>
+                            <li>Você não se perde em dívidas emocionais.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Painel: Trabalho/Estudo -->
+                <div role="tabpanel" id="trabalho" class="tab-panel hidden space-y-6">
+                    <h3 class="text-2xl font-bold text-white">📘 Trabalho / Estudo</h3>
+                    <p class="text-gray-300">Essa é a ponte direta para ganhar mais, aprendendo habilidades que o mercado paga caro.</p>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">O que fazer na prática:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Aprender habilidades: edição de vídeo, tráfego pago, design, copywriting, SEO, produção de conteúdo.</li>
+                            <li>Criar rotinas de estudo aplicável (estudar → aplicar → vender o serviço).</li>
+                            <li>Criar pacotes de serviço (Ex: 8 Reels + Copy por R$997/mês).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Como isso aumenta seu dinheiro:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Quanto mais rara e valiosa sua habilidade, mais caro você pode cobrar.</li>
+                            <li>Você para de trocar tempo por pouco dinheiro e começa a vender valor.</li>
+                            <li>Permite criar fontes de renda paralelas e escaláveis.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Painel: Mente -->
+                <div role="tabpanel" id="mente" class="tab-panel hidden space-y-6">
+                    <h3 class="text-2xl font-bold text-white">🧠 Mente</h3>
+                    <p class="text-gray-300">A base psicológica do dinheiro. Sua mente pode criar riqueza ou sabotar você.</p>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">O que fazer na prática:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Estudar 30 min/dia sobre uma habilidade lucrativa (veja "Trabalho").</li>
+                            <li>Escrever 10 ideias de negócios ou serviços por dia para aumentar a criatividade.</li>
+                            <li>Assistir menos conteúdo passivo (entretenimento vago) e mais conteúdo técnico (cursos, tutoriais).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Como isso aumenta seu dinheiro:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Você se torna mais estratégico e para de agir por impulso.</li>
+                            <li>Você aprende a criar soluções que outras pessoas pagam para ter.</li>
+                            <li>Reduz a sabotagem mental (procrastinação, medo de vender, ansiedade).</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Painel: Corpo -->
+                <div role="tabpanel" id="corpo" class="tab-panel hidden space-y-6">
+                    <h3 class="text-2xl font-bold text-white">🔥 Corpo</h3>
+                    <p class="text-gray-300">Seu corpo é o veículo. Sem energia física, você não consegue executar suas ideias.</p>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">O que fazer na prática:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Treinar 20-40 min por dia (calistenia, caminhada forte, musculação).</li>
+                            <li>Dormir 7-8 horas de qualidade.</li>
+                            <li>Reduzir açúcar e alimentos ultraprocessados.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Como isso aumenta seu dinheiro:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Você tem mais energia para trabalhar mais e melhor.</li>
+                            <li>Você toma decisões mais rápidas e firmes (cérebro nutrido).</li>
+                            <li>Disciplina corporal se transfere para disciplina financeira.</li>
+                            <li>Reduz gastos futuros com doenças.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Painel: Espiritual -->
+                <div role="tabpanel" id="espiritual" class="tab-panel hidden space-y-6">
+                    <h3 class="text-2xl font-bold text-white">✨ Espiritual</h3>
+                    <p class="text-gray-300">Não se trata de religião, mas de clareza interna e paz para tomar boas decisões.</p>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">O que fazer na prática:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>10 minutos de oração guiada ou meditação de silêncio.</li>
+                            <li>Praticar gratidão por 5 coisas todos os dias.</li>
+                            <li>Pedir clareza (a Deus, ao universo, a si mesmo) sobre qual é o próximo passo.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-2">Como isso aumenta seu dinheiro:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
+                            <li>Você toma decisões menos emocionais e ansiosas, o que reduz erros caros.</li>
+                            <li>Você cria paz interna, que melhora sua comunicação, presença e capacidade de negociação.</li>
+                            <li>Você ganha foco no que realmente importa, e foco gera dinheiro.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção 7: Seu Plano de Ação de 4 Semanas (NOVA SEÇÃO) -->
+        <section>
+            <h2 class="text-3xl font-bold text-white mb-8 text-center">Seu Plano de Ação de 4 Semanas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Semana 1 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col">
+                    <span class="text-xs font-bold text-brand-400 mb-2">SEMANA 1</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Identidade</h3>
+                    <p class="text-gray-300 text-sm flex-grow">Defina a identidade que você quer construir. Escreva-a 10x por dia. Visualize-se vivendo como essa pessoa.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-700">
+                        <p class="text-xs text-gray-400">Tarefa Chave:</p>
+                        <p class="text-sm text-gray-200 font-semibold">Declare quem você é e reafirme diariamente.</p>
+                    </div>
+                </div>
+                
+                <!-- Semana 2 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col">
+                    <span class="text-xs font-bold text-brand-400 mb-2">SEMANA 2</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Crenças</h3>
+                    <p class="text-gray-300 text-sm flex-grow">Identifique 5 crenças limitantes. Reescreva todas. Colete 1 pequena prova por dia para a nova crença.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-700">
+                        <p class="text-xs text-gray-400">Tarefa Chave:</p>
+                        <p class="text-sm text-gray-200 font-semibold">Reescreva crenças e prove as novas.</p>
+                    </div>
+                </div>
+
+                <!-- Semana 3 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col">
+                    <span class="text-xs font-bold text-brand-400 mb-2">SEMANA 3</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Desejo</h3>
+                    <p class="text-gray-300 text-sm flex-grow">Faça uma lista de "porquês". Por que essa mudança importa? Releia todo dia. Crie recompensas pequenas para seus hábitos.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-700">
+                        <p class="text-xs text-gray-400">Tarefa Chave:</p>
+                        <p class="text-sm text-gray-200 font-semibold">Liste seus porquês e leia diariamente.</p>
+                    </div>
+                </div>
+
+                <!-- Semana 4 -->
+                <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col">
+                    <span class="text-xs font-bold text-brand-400 mb-2">SEMANA 4</span>
+                    <h3 class="text-xl font-bold text-white mb-3">Hábitos</h3>
+                    <p class="text-gray-300 text-sm flex-grow">Comece 3 micro-hábitos alinhados com sua nova identidade. Aumente 1% por dia. Foque na consistência, não na intensidade.</p>
+                    <div class="mt-4 pt-4 border-t border-gray-700">
+                        <p class="text-xs text-gray-400">Tarefa Chave:</p>
+                        <p class="text-sm text-gray-200 font-semibold">Comece micro-hábitos e aumente gradualmente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 mt-16 border-t border-gray-800">
+        <p class="text-gray-500">Um guia baseado em princípios de mudança comportamental.</p>
+        <p class="text-gray-600 text-sm">Organizado e estruturado por IA.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            
+            // Estilos das abas
+            const activeClasses = ['bg-brand-500', 'text-gray-900', 'shadow-md'];
+            const inactiveClasses = ['bg-gray-700', 'text-gray-300', 'hover:bg-gray-600'];
+
+            function showTab(tabId) {
+                // Esconde todos os painéis
+                tabPanels.forEach(panel => {
+                    panel.classList.add('hidden');
+                });
+                
+                // Reseta todos os botões para inativos
+                tabButtons.forEach(button => {
+                    button.classList.remove(...activeClasses);
+                    button.classList.add(...inactiveClasses);
+                    button.setAttribute('aria-selected', 'false');
+                });
+
+                // Mostra o painel correto
+                const activePanel = document.getElementById(tabId);
+                if (activePanel) {
+                    activePanel.classList.remove('hidden');
+                }
+                
+                // Ativa o botão correto
+                const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+                if (activeButton) {
+                    activeButton.classList.remove(...inactiveClasses);
+                    activeButton.classList.add(...activeClasses);
+                    activeButton.setAttribute('aria-selected', 'true');
+                }
+            }
+
+            // Adiciona o clique em cada botão
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    showTab(button.dataset.tab);
+                });
+            });
+
+            // Mostra a aba 'dinheiro' por padrão
+            showTab('dinheiro');
+        });
+    </script>
+
+</body>
+</html>
